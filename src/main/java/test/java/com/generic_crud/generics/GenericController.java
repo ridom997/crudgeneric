@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.Serializable;
 
-@Controller
 public class GenericController  <T extends GenericEntity, ID extends Serializable> {
     @Autowired
     private GenericService<T, ID> genericService;

@@ -5,6 +5,5 @@ import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
 
-@Repository
 public interface GenericRepository <T extends GenericEntity, ID extends Serializable> extends JpaRepository<T, ID> {
 }
