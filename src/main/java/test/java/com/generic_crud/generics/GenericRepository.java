@@ -1,7 +1,6 @@
 package test.java.com.generic_crud.generics;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
 

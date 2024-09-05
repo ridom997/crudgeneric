@@ -3,7 +3,6 @@ package test.java.com.generic_crud.generics;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.Serializable;
@@ -37,6 +36,5 @@ public class GenericController  <T extends GenericEntity, ID extends Serializabl
     private ResponseEntity<Boolean> deleteEntitById (@PathVariable("id") ID id){
         genericService.deleteById(id);
         return ResponseEntity.ok(genericService.findById(id).isEmpty());
-
     }
 }
